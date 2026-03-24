@@ -5,7 +5,7 @@
         <title> ex1 </title>
         <style>
             /*configurações globais*/
-             * {
+            * {
                 margin : 0;
                 padding : 0;
                 box-sizing: border-box;
@@ -17,12 +17,12 @@
                 color: #ffffff;
             }
             /*usando vh e vw o header ocupa 70% da altura da tela e 100% da largura da tela*/
-            header{
+            header {
                 width: 100vw;
                 height: 70vh;
                 /*fade do fundo gradual*/
-                background: linear-gradient(rgba(0, 0, 0, 0.7)),rgba(138, 43, 226, 0.4,
-                    url(https://st5.depositphotos.com/11564276/63906/v/450/depositphotos_639061660-stock-illustration-vector-illustration-neon-future-game.jpg) no-repeat center center;
+                    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(138, 43, 226, 0.4)) ,
+                    url('https://st5.depositphotos.com/11564276/63906/v/450/depositphotos_639061660-stock-illustration-vector-illustration-neon-future-game.jpg') no-repeat center center;
                 background-size: cover;
                 display: flex;
                 flex-direction: column;
@@ -48,11 +48,11 @@
             .main-content {
                 width:  90%;
                 max-width: 1200px;
-                margin:-50px 2em auto; /*sobe um pouco pra sobrepor o header*/
+                margin:-50px auto 2em auto; /*sobe um pouco pra sobrepor o header*/
                 background-color: #1a1f29;
                 padding: 3em;
                 border-radius: 15px;
-                box-shadow: 0px 10px 30px rbga(0,0,0,0,0.5);
+                box-shadow: 0px 10px 30px rbga(0,0,0,0.5);
                 position: relative;
             }
             .game-card {
@@ -61,7 +61,7 @@
                 float: left;
                 background: #252a35;
                 border: 1px solid #3d4451;
-                padding: 1em;
+                padding: 1.5em;
                 border-radius:8px;
                 height: 450px;/*altura fixa para os alunos testarem transbordo*/
             }
@@ -114,21 +114,23 @@
             <h2>Missões disponíveis</h2>
 
             <div class="game-card">
-                <img src ="https://depositphotos.com/br/illustrations/gamer.html" alt="quest 1">
+                <img src ="https://img.freepik.com/vetores-gratis/jogo-joystick-tecnologia-esportiva_138676-2045.jpg?semt=ais_hybrid&w=740&q=80" alt="quest 1">
                 <h3>Boss: Arquitetura do sistema operacional</h3>
                 <p> Encare o desafio de entender como os sistemas gerenciam o hardware para rodar seus jogos favoritos.</p>
                 <a href="#" class="btn-play">INICIAR QUEST</a>
             </div>
 
             <div class="game-card">
-                <img src="https://pt.pngtree.com/free-backgrounds-photos/fundo-azul-para-jogos-pictures">
+                <img src=https://img.freepik.com/vetores-gratis/jogo-joystick-tecnologia-esportiva_138676-2045.jpg?semt=ais_hybrid&w=740&q=80>
                 <h3>XP: Design responsivo</h3>
                 <p> Aprenda a usar % em vh e vw para que seu jogo seja acessivel em qualquer tela, do mobile ao PC gamer</p>
                 <a href="#" class="btn-play">COLETAR XP</a>
             </div>
+
+            <footer>
+                <p>GAME OVER? no. <strong>keep coding</strong></p>
+            </footer>
         </div>
-        <footer>
-            <p>GAME OVER? no. <strong>keep coding</strong></p>
-        </footer>
+
     </body>
 </html>
