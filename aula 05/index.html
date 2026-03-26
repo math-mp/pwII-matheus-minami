@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang='pt-BR'>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>Exercicio de HTML5 moderno</title>
+
+        <style>
+            /* substituimos as tags <font>, <basefont>, e atributos 'color' 'size' e 'face'*/
+            body {
+                font-family: Arial sans-serif;
+                color: #333333; /*cinza escuro*/
+                line-height: 1.6;
+                margin: 40px auto ; /* alterado para auto para centralizar a pagina em todos os dispositivos*/
+                max-width: 800px; /*limita a largura da pagina*/
+            }
+            header{
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            /*centralizando o rodape*/
+            footer{
+                text-align: center;
+                margin-top: 50px;
+                font-weight: bold;
+            }
+            /*estilizando a lista sem usar o atributo type='square' no HTML*/
+            .lista-quadrada{
+                list-style-type: square ;
+            }
+            /*substitui a tag <hr noshade>*/
+            .linha-divisoria{
+                border: 0;
+                border-top: 2px solid #007BFF; /*linha azul solida sem sombra*/
+                margin:30px 0;
+            }
+            /* deixa a legenda mais bonita*/
+            figcaption {
+                font-size: 0.9em;
+                color: #666;
+                font-style: italic;
+            }
+        </style>
+
+    </head>
+    <body>
+
+        <header>
+            <h1>Meu artigo moderno</h1>
+            <nav>
+                <a href="#conclusão">pular direto para a conclusão </a>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h2>oque aprendemos hoje?</h2>
+                <p>o HTML5 é focado na <strong>semantica</strong>. Deixamos a apresentação visual para o CSS</p>
+
+                <ul class ="lista-quadrada">
+                    <li>Estrutura limpa</li>
+                    <li>CSS para o visual</li>
+                    <li>Acessibilidade melhorada</li>
+                </ul>
+            </section>
+
+            <hr class="linha-divisoria">
+
+            <section>
+                <h2>um exemplo de imagem</h2>
+                <figure>
+                    <img src="https://placehold.co/400x200" alt="retangulo cinza com o texto 400x200">
+                    <figcaption>figura 1: exemplo de uma imagem com legenda estruturada corretamente no HTML5.</figcaption>
+                </figure>
+            </section>
+
+            <section id='conclusão'>
+                <h2>conclusão</h2>
+                <p> a web ficou muito mais organizada e melhor né?</p>
+                <p>quer saber mais?<a href="https://www.google.com.br" target="_blank"> busque no goole</a></p>
+            </section>
+        </main>
+        <footer>
+            matheus minami pacheco - camargo aranha - 2026
+        </footer>
+    </body>
+</html>
