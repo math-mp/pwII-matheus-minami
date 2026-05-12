@@ -9,7 +9,7 @@ $senha = '';
 try {
     //configura o PDO para mostrar erros
     $conexao = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8",$usuario,$senha);
-    $conexao ->setAttribute(PDO: :ATTR_ERRMODE, PDO: :ERRMODE_EXCEPTION);
+    $conexao->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch(PDOException $e){
     //para e mostra caso ocorra um erro
     die("erro ao se conectar com banco de dados: ". $e->getMessage());

@@ -59,6 +59,7 @@ $mensagens = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <th>Nome/Sobrevivente</th>
             <th>E-mail de Contato</th>
             <th>Conteudo da mensagem</th>
+            <th>Ação</th>
         </tr>
         
         <?php foreach ($mensagens as $linha): ?>
@@ -67,6 +68,10 @@ $mensagens = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <td><?php echo $linha['nome']; ?> </td>
             <td><?php echo $linha['email']; ?> </td>
             <td><?php echo $linha['mensagem']; ?> </td>
+            <td>
+                <a href="deletar.php?id=<?php echo $linha['id']; ?>" class="btn-excluir" onclick="return confirm('tem certeza que deseja excluir este sobrevivente/mensagem?');">
+                Excluir</a>
+            </td>
         </tr>
         <?php endforeach; ?>
     </table>
