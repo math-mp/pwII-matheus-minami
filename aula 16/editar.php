@@ -33,16 +33,16 @@ try{
     <?php if ($contato): ?>
         <form action="atualizar.php" method="POST">
 
-            <input type="hidden" name="id" value="<?php echo $contato['ID'];?>">
+            <input type="hidden" name="id" value="<?php echo $contato['id'];?>">
             
-            <label>Nome: </label></form><br>
-            <input type="text" name="nome" value="<?php echo htmlspecialchars($contato['NOME']); ?>" required><br><br>
+            <label>Nome: </label><br>
+            <input type="text" name="nome" value="<?php echo htmlspecialchars($contato['nome']); ?>" required><br><br>
             
-            <label>Nome: </label></form><br>
-            <input type="email" name="email" value="<?php echo htmlspecialchars($contato['EMAIL']); ?>" required><br><br>
+            <label>E-mail: </label><br>
+            <input type="email" name="email" value="<?php echo htmlspecialchars($contato['email']); ?>" required><br><br>
 
-            <label>Nome: </label></form><br>
-            <textarea name="mensagem" required><?php echo htmlspecialchars($contato['MENSAGEM']); ?></textarea><br><br>
+            <label>Mensagem: </label><br>
+            <textarea name="mensagem" required><?php echo htmlspecialchars($contato['mensagem']); ?></textarea><br><br>
 
             <button type="submit">Salvar Alterações</button>
         </form>
