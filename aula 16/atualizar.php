@@ -15,7 +15,7 @@ try {
         $email = $_POST['email'];
         $mensagem = $_POST['mensagem'];
 
-        $sql = "update contatos set nome = :nome, email, mensagem = :mensagem where id = :id";
+        $sql = "update contatos set nome = :nome, email = :email, mensagem = :mensagem where id = :id";
 
         $stmt = $conexao->prepare($sql);
 
@@ -34,3 +34,4 @@ try {
 }catch(PDOException $e) {
     die("Erro ao atualizar: " . $e->getMessage());
 }
+?>
